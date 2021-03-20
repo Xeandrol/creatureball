@@ -14,9 +14,13 @@ function result(x, y, z, j) {
     } else {
       document.getElementById("sad").innerHTML = ":(";
     } */
-    document.getElementById("bonus").innerHTML = parseInt(
-      (x * y) / (z * j * k)
-    );
+    var res = parseInt((x * y * 3) / (z * j * k));
+    if (res > 22) {
+      document.getElementById("greve").innerHTML = "Greve in culo frate";
+    } else {
+      document.getElementById("greve").innerHTML = "";
+    }
+    document.getElementById("bonus").innerHTML = res;
   }
 
   /* else if ((check = false)) {
