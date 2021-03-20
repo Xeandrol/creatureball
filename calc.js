@@ -5,8 +5,8 @@ function result(x, y, z, j) {
   var z = document.getElementById("pokeball").value;
   var j = document.getElementById("pkStatus").value;
   var k = document.getElementById("halfLvl").value;
-  if (x == 0 || y == 0) {
-    document.getElementById("bonus").innerHTML = "Porcoddio errore";
+  if (x == 0) {
+    document.getElementById("bonus").innerHTML = "Porcoddio è morto";
   } else {
     /* if (check == true) {
       j = 4;
