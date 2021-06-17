@@ -6,7 +6,7 @@ function result(x, y, z, j) {
   var j = document.getElementById("pkStatus").value;
   var k = document.getElementById("halfLvl").value;
   if (x == 0) {
-    document.getElementById("bonus").innerHTML = "Porcoddio è morto";
+    document.getElementById("bonus").innerHTML = "0 Hp rimanenti.";
   } else {
     /* if (check == true) {
       j = 4;
@@ -16,7 +16,7 @@ function result(x, y, z, j) {
     } */
     var res = parseInt((x * y * 3) / (z * j * k));
     if (res > 22) {
-      document.getElementById("greve").innerHTML = "Greve in culo frate";
+      document.getElementById("greve").innerHTML = "Quasi impossibile";
     } else {
       document.getElementById("greve").innerHTML = "";
     }
